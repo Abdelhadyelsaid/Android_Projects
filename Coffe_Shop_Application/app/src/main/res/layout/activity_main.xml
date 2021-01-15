@@ -1,71 +1,126 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-
-    <ImageView
-        android:id="@+id/coffe"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_alignParentTop="true"
-        android:scaleType="centerCrop"
-        android:src="@drawable/pic" />
+        android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/location"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/coffe"
-        android:textSize="20sp"
-        android:layout_alignParentLeft="true"
-        android:text="Location: Alexanderia, Egypt"
-        android:paddingLeft="30dp"
-        android:paddingRight="30dp"
-        android:paddingTop="30dp"
-        android:textColor="#4689C8"
-        />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <ImageView
+                android:id="@+id/coffe"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:layout_weight="1"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/pic" />
 
-    <TextView
-        android:id="@+id/Contact"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/location"
-        android:layout_alignParentLeft="true"
-        android:textSize="20sp"
-        android:padding="30dp"
-        android:textColor="#4689C8"
-        android:text="Contact : 04721753221"/>
+            <TextView
+                android:id="@+id/location_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:fontFamily="cursive"
+                android:paddingLeft="20dp"
+                android:paddingRight="10dp"
+                android:textStyle="bold"
+                android:text="Location" />
 
-    <TextView
-        android:id="@+id/title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="30sp"
-        android:paddingLeft="30dp"
-        android:paddingRight="30dp"
-        android:paddingBottom="10dp"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@id/Contact"
-        android:textStyle="bold"
-        android:text="Description:" />
+            <TextView
+                android:id="@+id/location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:fontFamily="monospace"
+                android:text="Al-Montazh, Alexanderia, Egypt"
+                android:paddingLeft="20dp"
+                android:paddingBottom="8dp"
+                android:textColor="#4689C8"
+                />
+            <TextView
+                android:id="@+id/Contact_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:fontFamily="cursive"
+                android:paddingLeft="20dp"
+                android:paddingRight="10dp"
+                android:textStyle="bold"
+                android:text="Contact Info:" />
+            <TextView
+                android:id="@+id/phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:fontFamily="monospace"
+                android:paddingLeft="20dp"
+                android:paddingRight="10dp"
+                android:textColor="#4689C8"
+                android:text="Phone : 04721753221"/>
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:fontFamily="monospace"
+                android:paddingLeft="20dp"
+                android:paddingBottom="8dp"
+                android:textColor="#4689C8"
+                android:text="Email : Coffeshop@gmail.com"/>
+            <TextView
+                android:id="@+id/Work_hours"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:fontFamily="cursive"
+                android:paddingLeft="20dp"
+                android:paddingRight="10dp"
+                android:textStyle="bold"
+                android:text="Work Hours:" />
+            <TextView
+                android:id="@+id/Work_hours_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:fontFamily="monospace"
+                android:paddingLeft="20dp"
+                android:paddingBottom="8dp"
+                android:textColor="#4689C8"
+                android:text="Everyday from 9 am to 1 pm"/>
+            <TextView
+                android:id="@+id/description_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:fontFamily="cursive"
+                android:paddingLeft="20dp"
+                android:paddingRight="10dp"
+                android:textStyle="bold"
+                android:text="Description:" />
 
 
-    <TextView
-        android:id="@+id/description"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/title"
-        android:textSize="20sp"
-        android:paddingLeft="30dp"
-        android:paddingRight="30dp"
-        android:layout_alignParentLeft="true"
-        android:textColor="#4689C8"
-        android:text="In Coffe_shop we provide alot of hot drinks and delicious coffe, also you can have a meal or a dessert. "/>
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:fontFamily="monospace"
+                android:layout_weight="1"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textColor="#4689C8"
+                android:text="In Coffeshop we provide alot of hot drinks and delicious Coffe, also you can have a meal or a dessert. "/>
 
+        </LinearLayout>
 
+    </ScrollView>
 
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
