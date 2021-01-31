@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Quizz App</string>
+    <string name="Question1">What is the Capital of Chile ?</string>
+    <string name="santiago">Santiago</string>
+    <string name="cairo">Cairo</string>
+    <string name="brelin">Berlin</string>
+    <string name="Question2">Which countries have won the World Cup in Football ?</string>
+    <string name="Egypt">Egypt</string>
+    <string name="Spain">Spain</string>
+    <string name="Germany">Germany</string>
+    <string name="Question3">What is the Biggest Country in the World ?</string>
+    <string name="Russia">Russia</string>
+    <string name="China">China</string>
+    <string name="India">India</string>
+    <string name="Question4">Write short description about Tourism in Egypt !</string>
+    <string name="Question5">How many people in the World ?</string>
+    <string name="seven_Billion">7 Billion</string>
+    <string name="twelve_Billion">12 Billion</string>
+    <string name="four_Billion">4 Billion</string>
+    <string name="Question6">Egyptians have Nobel Prize in Peace ?</string>
+    <string name="sadat">Mohammed Anwar El Sadat</string>
+    <string name="zweel">Ahmed Zeweel</string>
+    <string name="Baradeey">Mohamed ElBaradei</string>
+    <string name="Question7">Calculate this operation: 30*6/9</string>
+    <string name="Answer1">20</string>
+    <string name="Answer2">30</string>
+    <string name="Answer3">40</string>
+    <string name="submit">Submit</string>
+
+</resources>
